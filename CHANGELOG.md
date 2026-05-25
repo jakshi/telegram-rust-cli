@@ -1,5 +1,17 @@
 # Changelog
 
+## v0.2.0
+
+First public release.
+
+- publish the project from a clean public repository history
+- add public CI checks for formatting, tests, clippy, and RustSec advisories
+- replace private Homebrew release asset handling with public release URLs
+- document Telegram API credential setup and authentication flow
+- clarify macOS prebuilt binary support and source build requirements
+- add public package metadata
+- remove private development notes and local tool configuration from project tracking
+
 ## v0.1.2
 
 Fix: Homebrew-installed binary crashed with `dyld: Library not loaded: libtdjson`.

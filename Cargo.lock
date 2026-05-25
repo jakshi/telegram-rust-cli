@@ -1165,7 +1165,7 @@ checksum = "3d792369bc9984e0a469c0acff4dea61f3bc63c4a6a4a70005e109ba899d7762"
 
 [[package]]
 name = "tgrc"
-version = "0.1.2"
+version = "0.2.0"
 dependencies = [
  "chrono",
  "clap",
