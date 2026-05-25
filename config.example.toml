@@ -1,0 +1,11 @@
+# Get your API credentials from https://my.telegram.org
+[telegram]
+api_id = 12345678
+api_hash = "your_api_hash_here"
+# tdlib_log_verbosity = 0  # 0 = silent (default), 1-5 = increasing detail
+
+# Default chat to read (optional — can be overridden via CLI)
+# Accepts: public username, chat ID, or "saved"
+[channel]
+chat = "durov"
+message_limit = 20

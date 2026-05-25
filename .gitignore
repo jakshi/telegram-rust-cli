@@ -1,0 +1,8 @@
+/target
+.claude/
+.notes
+justfile.local
+config.toml
+.env
+.env.*
+!.env.example
