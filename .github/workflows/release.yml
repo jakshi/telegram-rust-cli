@@ -105,6 +105,7 @@ jobs:
             homepage "https://github.com/jakshi/telegram-rust-cli"
             version "${version}"
             license "MIT"
+            depends_on :macos
 
             on_macos do
               if Hardware::CPU.arm?
@@ -131,10 +132,10 @@ jobs:
 
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          if git diff --quiet -- Formula/tgrc.rb; then
+          git add Formula/tgrc.rb
+          if git diff --cached --quiet -- Formula/tgrc.rb; then
             echo "Homebrew tap already up to date"
           else
-            git add Formula/tgrc.rb
             git commit -m "Update tgrc to ${version}"
             git push
           fi
