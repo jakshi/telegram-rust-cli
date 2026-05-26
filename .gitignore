@@ -1,6 +1,8 @@
 /target
 .claude/
 .notes
+/TODO.md
+/DONE.md
 justfile.local
 config.toml
 .env
