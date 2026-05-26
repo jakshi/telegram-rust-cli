@@ -4,6 +4,12 @@ Telegram Rust CLI — read Telegram messages from the terminal. Supports public 
 
 ## Install
 
+### Homebrew
+
+```bash
+brew install jakshi/tap/tgrc
+```
+
 ### Prebuilt binary
 
 Download a macOS release binary for your platform. Release binaries are
