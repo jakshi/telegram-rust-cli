@@ -2,6 +2,10 @@
 
 Telegram Rust CLI — read Telegram messages from the terminal. Supports public channels, private groups, and Saved Messages. Built with [tdlib](https://github.com/tdlib/td) via [tdlib-rs](https://github.com/FedericoBruzzone/tdlib-rs).
 
+## Why
+
+I occasionally stash useful links in Telegram Saved Messages and wanted AI agents to read and sort them. An MCP server is overkill for a local workflow — a CLI plus an agent skill fits better. No existing Telegram CLI suited agent use, so I built one. Turned into a rabbit hole. Rust because it's the reliable, elegant choice for CLIs.
+
 ## Install
 
 ### Homebrew
@@ -12,8 +16,8 @@ brew install jakshi/tap/tgrc
 
 ### Prebuilt binary
 
-Download a macOS release binary for your platform. Release binaries are
-statically linked and include everything needed to run `tgrc`.
+Download a macOS release binary. Release binaries are statically linked and
+bundle all runtime dependencies.
 
 ### Build from source
 
@@ -21,8 +25,8 @@ statically linked and include everything needed to run `tgrc`.
 cargo build --release
 ```
 
-The first source build may download a TDLib archive through `tdlib-rs`, so it
-requires network access.
+The first source build downloads a TDLib archive via `tdlib-rs` and needs
+network access.
 
 ## Authentication
 
@@ -55,9 +59,9 @@ tgrc auth login
    - Enter the verification code sent by Telegram
    - Enter your 2FA password if your account has one
 
-Authentication is only needed once. TDLib stores the session locally, and future
-commands reuse it. Run `tgrc auth logout` to revoke the Telegram session and
-delete local session data.
+Authenticate once. TDLib stores the session locally, and future commands reuse
+it. Run `tgrc auth logout` to revoke the Telegram session and delete local
+session data.
 
 ## Commands
 
@@ -129,9 +133,9 @@ Auth:                logged in
 
 ## Config
 
-Config is loaded from `~/.config/tgrc/config.toml`, falling back to `~/Library/Application Support/tgrc/config.toml`, then `./config.toml`.
+`tgrc` loads config from `~/.config/tgrc/config.toml`, falling back to `~/Library/Application Support/tgrc/config.toml`, then `./config.toml`.
 
-The `[channel]` section is optional — you can always pass arguments via CLI instead.
+The `[channel]` section is optional; pass arguments via CLI instead.
 
 ```toml
 [telegram]
