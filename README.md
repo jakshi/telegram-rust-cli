@@ -6,6 +6,22 @@ Telegram Rust CLI — read Telegram messages from the terminal. Supports public 
 
 I occasionally stash useful links in Telegram Saved Messages and wanted AI agents to read and sort them. An MCP server is overkill for a local workflow — a CLI plus an agent skill fits better. No existing Telegram CLI suited agent use, so I built one. Turned into a rabbit hole. Rust because it's the reliable, elegant choice for CLIs.
 
+## Quick Start
+
+1. Install via Homebrew:
+
+   ```bash
+   brew install jakshi/tap/tgrc
+   ```
+
+2. Create Telegram API credentials and log in — see [Authentication](#authentication) (one-time, ~2 minutes).
+
+3. Read your Saved Messages:
+
+   ```bash
+   tgrc read saved
+   ```
+
 ## Install
 
 ### Homebrew
