@@ -171,3 +171,7 @@ message_limit = 20    # default number of messages to fetch
 | `telegram.tdlib_log_verbosity` | TDLib log level: 0 = silent (default), 1-5 for debugging |
 | `channel.chat` | Default chat: username, chat ID, or `"saved"` |
 | `channel.message_limit` | Default number of messages to fetch (default: 20) |
+
+## Contributing
+
+Solo side project, hobby pace. Not accepting pull requests right now — especially AI-generated ones. Bug reports and feature ideas welcome via [GitHub issues](https://github.com/jakshi/telegram-rust-cli/issues).
