@@ -175,3 +175,6 @@ message_limit = 20    # default number of messages to fetch
 ## Contributing
 
 Solo side project, hobby pace. Not accepting pull requests right now — especially AI-generated ones. Bug reports and feature ideas welcome via [GitHub issues](https://github.com/jakshi/telegram-rust-cli/issues).
+
+## Motivation
+## Usage
